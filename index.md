@@ -26,22 +26,31 @@
 
 ## 7. Edit the code file to fix the failing test
 
+
 Use Nano to edit the file:
+
 
 <img width="431" alt="Screen Shot 2023-02-26 at 11 13 44 PM" src="https://user-images.githubusercontent.com/122569310/221498054-082e4115-6107-4ba9-8b35-7127d4cdb2ec.png">
 
-<down><down>...<down><down> (42 times - to line 42) 
+
+<down><down>...<down><down> (42 times - to line 42)
+  
+  
 <right>..<right> (9 times - until I reach index[1]) -> <delete> -> then I changed to "index[2]"
 
 
 <img width="617" alt="Screen Shot 2023-02-26 at 11 12 29 PM" src="https://user-images.githubusercontent.com/122569310/221497814-abfd7c43-6bac-4a8f-8d92-698d4d171115.png">
 
+  
 Here is the change:
 
+  
 <img width="256" alt="Screen Shot 2023-02-26 at 11 13 07 PM" src="https://user-images.githubusercontent.com/122569310/221497940-3db5d62f-eefc-4dcf-b6a2-516eab776ccc.png">
 
+  
 Then, I use ^X to save and exit. I pressed "Y" to say yes to the save -> Pressed <Enter>
 
+  
 ## 8. Run the tests, demonstrating that they now succeed
 
 <img width="736" alt="Screen Shot 2023-02-26 at 11 14 54 PM" src="https://user-images.githubusercontent.com/122569310/221498244-155928fc-be27-4d88-93cd-b569a125fad2.png">
@@ -50,18 +59,26 @@ Then, I use ^X to save and exit. I pressed "Y" to say yes to the save -> Pressed
   
 ## 9. Commit and push the resulting change to your Github account (you can pick any commit message!)
 
+  
 I first typed: 
+  
   
   git add . 
   
+  
 Then <enter>
+  
   
   git commit -m "Code is now finished"
   
+  
 Then <Enter>
+  
   
   git push
   
+  
 Then <Enter> and I entered my credentials. 
+  
   
 <img width="550" alt="Screen Shot 2023-02-26 at 11 16 58 PM" src="https://user-images.githubusercontent.com/122569310/221498610-c54b02d7-e4a3-4a35-b030-e5f06d70afcb.png">
