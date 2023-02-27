@@ -47,6 +47,7 @@ Then, I use ^X to save and exit. I pressed "Y" to say yes to the save -> Pressed
 <img width="736" alt="Screen Shot 2023-02-26 at 11 14 54 PM" src="https://user-images.githubusercontent.com/122569310/221498244-155928fc-be27-4d88-93cd-b569a125fad2.png">
 
 
+  
 ## 9. Commit and push the resulting change to your Github account (you can pick any commit message!)
 
 I first typed: 
