@@ -33,10 +33,10 @@ Use Nano to edit the file:
 <img width="431" alt="Screen Shot 2023-02-26 at 11 13 44 PM" src="https://user-images.githubusercontent.com/122569310/221498054-082e4115-6107-4ba9-8b35-7127d4cdb2ec.png">
 
 
-<down><down>...<down><down> (42 times - to line 42)
+I pressed <down> (42 times - to line 42)
   
   
-<right>..<right> (9 times - until I reach index[1]) -> <delete> -> then I changed to "index[2]"
+I pressed <right> (9 times - until I reach index[1]) -> <delete> -> then I changed to "index[2]"
 
 
 <img width="617" alt="Screen Shot 2023-02-26 at 11 12 29 PM" src="https://user-images.githubusercontent.com/122569310/221497814-abfd7c43-6bac-4a8f-8d92-698d4d171115.png">
