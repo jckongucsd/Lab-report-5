@@ -48,7 +48,7 @@ Here is the change:
 <img width="256" alt="Screen Shot 2023-02-26 at 11 13 07 PM" src="https://user-images.githubusercontent.com/122569310/221497940-3db5d62f-eefc-4dcf-b6a2-516eab776ccc.png">
 
   
-Then, I use ^X to save and exit. I pressed "Y" to say yes to the save -> Pressed <Enter>
+Then, I use ^X to save and exit. I pressed "Y" to say yes to the save -> Pressed < Enter >
 
   
 ## 8. Run the tests, demonstrating that they now succeed
@@ -63,19 +63,19 @@ Then, I use ^X to save and exit. I pressed "Y" to say yes to the save -> Pressed
 I first typed: 
   
   
-  git add . 
+  `git add .` 
   
   
-Then <enter>
+Then < enter >
   
   
-  git commit -m "Code is now finished"
+  `git commit -m "Code is now finished"`
   
   
-Then <Enter>
+Then < Enter >
   
   
-  git push
+  `git push`
   
   
 Then <Enter> and I entered my credentials. 
