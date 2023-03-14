@@ -1,4 +1,4 @@
-# Lab Report 4
+# Lab Report 5
 
 ## 1. Setup Delete any existing forks of the repository you have on your account
 
@@ -75,31 +75,37 @@ Use Nano to edit the file:
 <img width="431" alt="Screen Shot 2023-02-26 at 11 13 44 PM" src="https://user-images.githubusercontent.com/122569310/221498054-082e4115-6107-4ba9-8b35-7127d4cdb2ec.png">
 
 
- Here is the bashscript (pseudo-code) that you can use: 
+ ### Here is the bashscript (pseudo-code) that you can use: 
  ```
 #!/bin/bash
 
 # Delete any existing forks of the repository you have on your account
 # replace "your-username" with your actual Github username
+
 curl -X DELETE https://api.github.com/repos/your-username/repository-name/forks
 
 # Fork the repository
 # replace "upstream-repo" with the name of the repository you want to fork
 # replace "your-username" with your actual Github username
+
 curl -u "your-username" -X POST https://api.github.com/repos/upstream-repo/forks
 
 # Clone your fork of the repository from your Github account
 # replace "your-username" with your actual Github username
+
 git clone https://github.com/your-username/repository-name.git
 
 # Change directory to the cloned repository
+
 cd repository-name
 
 # Compile the code and run the JUnit tests
+
 javac -cp ../libs/junit-4.13.2.jar:../libs/hamcrest-2.2.jar:. TestListExamples.java
 java -cp ../libs/junit-4.13.2.jar:../libs/hamcrest-2.2.jar:. org.junit.runner.JUnitCore TestListExamples
 
 # If the tests passed, commit and push the changes to Github
+
 if [ $? -eq 0 ]
 then
     git add .
@@ -112,6 +118,7 @@ fi
 
 # Commit and push the resulting change to your Github account
 # replace "commit-message" with your commit message
+
 git add .
 git commit -m "commit-message"
 git push origin master
