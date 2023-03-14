@@ -92,12 +92,13 @@ Use Nano to edit the file:
 `java -cp ../libs/junit-4.13.2.jar:../libs/hamcrest-2.2.jar:. org.junit.runner.JUnitCore TestListExamples`
 
 
-
-`if [ $? -eq 0 ]`
-`then`
-    `git add .`
-   ` git commit -m "Fixed failing tests"`
-   ` git push origin master`
-`else`
-   ` echo "Tests failed, please fix the code and try again."`
-`fi`
+```
+if [ $? -eq 0 ]
+then
+    git add .
+    git commit -m "Fixed failing tests"
+    git push origin master
+else
+    echo "Tests failed, please fix the code and try again."
+fi
+```
