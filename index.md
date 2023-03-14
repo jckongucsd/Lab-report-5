@@ -76,50 +76,27 @@ Use Nano to edit the file:
 
 
  Here is the bashscript (pseudo-code) that you can use: 
- `
+ `curl -X DELETE https://api.github.com/repos/your-username/repository-name/forks`
 
-#!/bin/bash
+`curl -u "your-username" -X POST https://api.github.com/repos/upstream-repo/forks`
 
-#Delete any existing forks of the repository you have on your account
-#replace "your-username" with your actual Github username
-curl -X DELETE https://api.github.com/repos/your-username/repository-name/forks
+`git clone https://github.com/your-username/repository-name.git`
 
-#Fork the repository
-#replace "upstream-repo" with the name of the repository you want to fork
-#replace "your-username" with your actual Github username
-curl -u "your-username" -X POST https://api.github.com/repos/upstream-repo/forks
-
-#Clone your fork of the repository from your Github account
-#replace "your-username" with your actual Github username
-git clone https://github.com/your-username/repository-name.git
-
-#Change directory to the cloned repository
-cd repository-name
-
-#Run the tests, demonstrating that they fail
-#replace "test-command" with the actual command to run the tests
-test-command
-
-#Edit the code file to fix the failing test
-#replace "file-to-edit" with the name of the file you want to edit
-nano file-to-edit
-
-#Run the tests, demonstrating that they now succeed
-#!/bin/bash
-
-#Compile the code and run the JUnit tests
-javac -cp ../libs/junit-4.13.2.jar:../libs/hamcrest-2.2.jar:. TestListExamples.java
-java -cp ../libs/junit-4.13.2.jar:../libs/hamcrest-2.2.jar:. org.junit.runner.JUnitCore TestListExamples
-
-#If the tests passed, commit and push the changes to Github
+`cd repository-name`
 
 
-if [ $? -eq 0 ]
+
+`javac -cp ../libs/junit-4.13.2.jar:../libs/hamcrest-2.2.jar:. TestListExamples.java`
+`java -cp ../libs/junit-4.13.2.jar:../libs/hamcrest-2.2.jar:. org.junit.runner.JUnitCore TestListExamples`
+
+
+
+`if [ $? -eq 0 ]
 then
     git add .
     git commit -m "Fixed failing tests"
     git push origin master
 else
     echo "Tests failed, please fix the code and try again."
-fi
+fi`
 `
