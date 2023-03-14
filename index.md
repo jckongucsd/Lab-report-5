@@ -76,23 +76,30 @@ Use Nano to edit the file:
 
 
  Here is the bashscript (pseudo-code) that you can use: 
- 
- 
- `curl -X DELETE https://api.github.com/repos/your-username/repository-name/forks`
+ ```
+#!/bin/bash
 
-`curl -u "your-username" -X POST https://api.github.com/repos/upstream-repo/forks`
+# Delete any existing forks of the repository you have on your account
+# replace "your-username" with your actual Github username
+curl -X DELETE https://api.github.com/repos/your-username/repository-name/forks
 
-`git clone https://github.com/your-username/repository-name.git`
+# Fork the repository
+# replace "upstream-repo" with the name of the repository you want to fork
+# replace "your-username" with your actual Github username
+curl -u "your-username" -X POST https://api.github.com/repos/upstream-repo/forks
 
-`cd repository-name`
+# Clone your fork of the repository from your Github account
+# replace "your-username" with your actual Github username
+git clone https://github.com/your-username/repository-name.git
 
+# Change directory to the cloned repository
+cd repository-name
 
+# Compile the code and run the JUnit tests
+javac -cp ../libs/junit-4.13.2.jar:../libs/hamcrest-2.2.jar:. TestListExamples.java
+java -cp ../libs/junit-4.13.2.jar:../libs/hamcrest-2.2.jar:. org.junit.runner.JUnitCore TestListExamples
 
-`javac -cp ../libs/junit-4.13.2.jar:../libs/hamcrest-2.2.jar:. TestListExamples.java`
-`java -cp ../libs/junit-4.13.2.jar:../libs/hamcrest-2.2.jar:. org.junit.runner.JUnitCore TestListExamples`
-
-
-```
+# If the tests passed, commit and push the changes to Github
 if [ $? -eq 0 ]
 then
     git add .
@@ -101,4 +108,13 @@ then
 else
     echo "Tests failed, please fix the code and try again."
 fi
+
+
+# Commit and push the resulting change to your Github account
+# replace "commit-message" with your commit message
+git add .
+git commit -m "commit-message"
+git push origin master
 ```
+
+
