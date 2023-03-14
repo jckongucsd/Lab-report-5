@@ -76,6 +76,8 @@ Use Nano to edit the file:
 
 
  Here is the bashscript (pseudo-code) that you can use: 
+ 
+ 
  `curl -X DELETE https://api.github.com/repos/your-username/repository-name/forks`
 
 `curl -u "your-username" -X POST https://api.github.com/repos/upstream-repo/forks`
@@ -91,12 +93,11 @@ Use Nano to edit the file:
 
 
 
-`if [ $? -eq 0 ]
-then
-    git add .
-    git commit -m "Fixed failing tests"
-    git push origin master
-else
-    echo "Tests failed, please fix the code and try again."
-fi`
-`
+`if [ $? -eq 0 ]`
+`then`
+    `git add .`
+   ` git commit -m "Fixed failing tests"`
+   ` git push origin master`
+`else`
+   ` echo "Tests failed, please fix the code and try again."`
+`fi`
