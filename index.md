@@ -1,5 +1,13 @@
 # Lab Report 5
 
+Benefits of bashscript in Lab Report 4:
+
+In the specific instance of the tasks provided, writing a Bash script would have allowed for a faster and more efficient completion of the tasks. The tasks involved multiple steps, including deleting existing forks, forking a repository, logging into ieng6, cloning a forked repository, running tests, editing code, and committing and pushing changes to Github. Writing a Bash script that automated these steps would have saved time and minimized errors. For instance, the script could have included commands to delete existing forks, fork the repository, clone the forked repository, and run the tests. Additionally, the script could have used conditionals to check whether the tests passed or failed and to perform the appropriate action, such as editing code and committing and pushing changes if the tests failed. By using a Bash script, the entire process could have been completed quickly and without the need for manual intervention.
+
+
+
+
+
 
 ### 2. Setup Fork the repository
 
